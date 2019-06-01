@@ -71,3 +71,7 @@ Day 037: Worked on the CIFAR-10 dataset. No matter what I did, I still couldn't 
 Day 038&039: Trying to enhance image resolution using Convnet. Having issue with model not learning the training set. From what I have read, dozens of things could have gone wrong. Kind of lost
 
 Day 040-042: Got sick last couple of days. I finished working on using a neural network to enhance image resolution. Here are the results: (left: original, right: enhanced). Overall acceptable. Slight enhancement on the tiger and the zebra looks a bit cartoonish.
+
+Day 043&044: Exploring a related topic--image inpainting. Trying to regenerate deleted parts of an image. Realized my model architecture didn't work. Started exploring variational autoencoder (https://blog.keras.io/building-autoencoders-in-keras.html …) Generative neural networks are fun.
+
+Day 045-047: Spent two days getting the neural network architecture set up. Spent today trying to train the model to reconstruct missing part of an image. Not even overfitting. Something is wrong with the model.
