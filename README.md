@@ -1,7 +1,24 @@
 # Data-Science-Projects
 Learning data science through building projects. #100DayOfMLCode
-
-
+## Easy Projects
+### Breast Cancer detection
+This is a pretty simple data set. Using 9 features of biopsy, classified whether it is cancerous or not. Used the pandas library to explore and prepare the data. Plotted the distributions and correlation matrixes of each feature. Used K-nearest neighbors and suppor vector machine classifier and got accuracies of 95% for both models.
+### Board Game Review Prediction
+To predict board game ratings from a scale from 0 to 10 based on numeric features such as play time, number of owners, number of wishers, number of comments, etc. Performed data cleaning by removing unrated data points. Used linear regression and random forest for the machine learning models. Random forest out-performed linear regression based on mean squared error as metrics.
+### DNA Sequence Classification Using Various Machine Learning Algorithms
+Used DNA sequences that are equal in length to classify whether it is a promoter of a gene or not. Performed data preprocessing and feature engineering. In order to use the nucleotides in the sequences as features, they needed to be converted into dummy variables using pandas. Used a number of machine learning models and compared their performances. The models include K-nearest neighbors, densely connected neural network, gaussian process classifier, decision tree, random forest, ada boost, naive bayes, and support vector machine with various kernels. A support vector machine with linear kernel performed the best with the accuracy of 96%.
+### Peak Detection Using a Neural Network
+### Credit Card Fraud Detetion
+### Stock Market Clustering
+## Intermediate Projects
+### Diabetes Onset Detection
+### Learning Natural Language Processing
+## Hard Projects
+### CIFAR10 Image Classification
+### Image Super Resolution
+## Very Hard Projects
+### Image Denoising Using Principal Component Analysis
+## Daily Log
 Day 001: This might be too soon but have been working on an ANN project. Have implemented the core algorithms in @AndrewYNg 's class but this is the first time I have applied it in a real world problem. Still polishing the code.
 
 Day002: Polished up my notebook on peak detection using a neural network. With the lack of real labeled data, I worked around the problem using simulated peak data. This made my machine learning problem a lot easier.
