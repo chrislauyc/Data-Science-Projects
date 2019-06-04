@@ -8,8 +8,11 @@ To predict board game ratings from a scale from 0 to 10 based on numeric feature
 ### DNA Sequence Classification Using Various Machine Learning Algorithms
 Used DNA sequences that are equal in length to classify whether it is a promoter of a gene or not. Performed data preprocessing and feature engineering. In order to use the nucleotides in the sequences as features, they needed to be converted into dummy variables using pandas. Used a number of machine learning models and compared their performances. The models include K-nearest neighbors, densely connected neural network, gaussian process classifier, decision tree, random forest, ada boost, naive bayes, and support vector machine with various kernels. A support vector machine with linear kernel performed the best with the accuracy of 96%.
 ### Peak Detection Using a Neural Network
+In my graduate research, I was tring to accurately determine the presence and absence of a peak from some time series data. The peaks are gaussian in shape, with varying amplitude, width, noise level, and baseline. Without any labeled data, the best way to train the model is to randomly generate the data, with and without a peak. A neural network was trained using MLPClassifier in sklearn. The net was densely connected with 2 hidden layers of 100 and 50 neurons. The resulting training accuracy was 95%
 ### Credit Card Fraud Detetion
+
 ### Stock Market Clustering
+Obtained open and closing values of various stocks using pandas_datareader. Calculated the daily movements for ~400 days, then performed kmeans clustering for 5 cluster centers. Then used principal component analysis to reduce the dimensionality of the data into only 2 dimensions. The clusters were very interesting and made a lots of sense. Clusters consisted of similar companies. For example, car companies were in the same cluster. Other clusters consisted of airplane companies, tech companies, or food and personal product companies. 
 ## Intermediate Projects
 ### Diabetes Onset Detection
 ### Learning Natural Language Processing
