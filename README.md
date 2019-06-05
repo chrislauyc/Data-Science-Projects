@@ -12,10 +12,12 @@ In my graduate research, I was tring to accurately determine the presence and ab
 ### Credit Card Fraud Detetion
 
 ### Stock Market Clustering
-Obtained open and closing values of various stocks using pandas_datareader. Calculated the daily movements for ~400 days, then performed kmeans clustering for 5 cluster centers. Then used principal component analysis to reduce the dimensionality of the data into only 2 dimensions. The clusters were very interesting and made a lots of sense. Clusters consisted of similar companies. For example, car companies were in the same cluster. Other clusters consisted of airplane companies, tech companies, or food and personal product companies. 
+Obtained open and closing values of various stocks using pandas_datareader. Calculated the daily movements for ~400 days, then performed kmeans clustering for 5 cluster centers. Then used principal component analysis to reduce the dimensionality of the data into only 2 dimensions. The clusters were very interesting and made a lots of sense. Clusters consisted of similar companies. For example, car companies were in the same cluster. Other clusters consisted of airplane companies, tech companies, or food and personal product companies.
 ## Intermediate Projects
 ### Diabetes Onset Detection
+The goal was to determine whether an individual has diabetes or not based on measurements such as the number of pregnancy, blood glucose level, insulin, BMI, etc. Performed data exploration and removed missing data. To avoid overpredicting the negative case, had to resample the negative data as the negative sample to positive sample ratio was 2:1. A densely connected neural network with two hidden layers was used. Used RandomizedSearchCV to automatically search for the hyperparameters that gave the best model. Parameters included batch_size, epochs, learning_rate, actiation function etc. The resulting accuracy on the test set was ~80 %.
 ### Learning Natural Language Processing
+An introduction to natural language processing. 
 ## Hard Projects
 ### CIFAR10 Image Classification
 ### Image Super Resolution
@@ -26,15 +28,15 @@ Day 001: This might be too soon but have been working on an ANN project. Have im
 
 Day002: Polished up my notebook on peak detection using a neural network. With the lack of real labeled data, I worked around the problem using simulated peak data. This made my machine learning problem a lot easier.
 
-Day003: Taking a deep dive into principal component analysis. Never taken linear algebra before so I am pretty confused about eigenvectors. Starting with basic linear algebra and working my way to gaining a fundamental understanding of PCA. 
+Day003: Taking a deep dive into principal component analysis. Never taken linear algebra before so I am pretty confused about eigenvectors. Starting with basic linear algebra and working my way to gaining a fundamental understanding of PCA.
 
 Day004 and 005: Progress has been slow last two days. Still going through the linear algebra essentials. @3blue1brown has a great video series walking you through the graphical intuition of linear algebra.
 
 Day006: finally watched through the linear algebra series by @3blue1brown. Moving on to understanding single value decomposition and eigendecomposition.
 
-Day007 and 008: Got a general understanding of the math behind PCA. Now starting a mini project to denoise an image using PCA 
+Day007 and 008: Got a general understanding of the math behind PCA. Now starting a mini project to denoise an image using PCA
 
-Day009. Used PCA to denoise an image. It worked somewhat but it's not as good as a boxcar average. Still trying. 
+Day009. Used PCA to denoise an image. It worked somewhat but it's not as good as a boxcar average. Still trying.
 
 Day010 and 011. PCA to denoise an image. Borrowed some ideas from this paper, which uses local pixel grouping and block matching to build a training set. Also messed around with Kmeans. Not happy with the results yet.
 
@@ -50,19 +52,19 @@ Day 017: Part 1. Started reading this DL book ch 1, 2. Review on the maths behin
 
 Day 017: Part 2. Started exploring the pima-indian dataset. Checked for skewness and correlations using pandas.plotting.scatter_matrix. Getting rid of data that don't make sense. Following a tutorial on using keras to detect the onset of diabetes.
 
-Day 018: Part 1. Statistics. This book seems quite useful. Reviewed on central limit theorem. Since I was exploring the pima-indians data, I also learned about bivariate (Pearson) correlation. Plotted a scattering matrix for the dataset. 
+Day 018: Part 1. Statistics. This book seems quite useful. Reviewed on central limit theorem. Since I was exploring the pima-indians data, I also learned about bivariate (Pearson) correlation. Plotted a scattering matrix for the dataset.
 
 Day 019: Part 1. Read an article on chinese NLP. Would be interesting to work on as it's difficult and I speak it. Don't know too much about NLP so it might kick my butt. But will try when I'm ready.
 
-Day 018 & 019. Part 2. Still working on diabetes onset detection using #keras. Learned about hyperparameter (learning rate, dropout, epoch, and batch size) tuning using a grid search method. And there is so much more to learn! 
+Day 018 & 019. Part 2. Still working on diabetes onset detection using #keras. Learned about hyperparameter (learning rate, dropout, epoch, and batch size) tuning using a grid search method. And there is so much more to learn!
 
-Day 020 & 021. Part 2. Finishing diabetes onset detection. The dataset is too imbalanced so I had to resample the data. Used RandomizedSearchCV for auto hyperparameter tuning. Finally got acceptable precision and recall, ~80% for both classes for the test set. 
+Day 020 & 021. Part 2. Finishing diabetes onset detection. The dataset is too imbalanced so I had to resample the data. Used RandomizedSearchCV for auto hyperparameter tuning. Finally got acceptable precision and recall, ~80% for both classes for the test set.
 
 Day 021. Part 1. Important to learn from the work of others. Going through a git repo in detail: https://github.com/awbirdsall/pyvap …. Learning the practices of managing and distribution open source software. This sample project is also useful: https://github.com/pypa/sampleproject
 
 Day 022: Part 1. Coding skill Thursday. Trying to understand how http://setup.py  and .travis.yml work. Also looked at ideas to showcase my coding skill, see: https://techbeacon.com/app-dev-testing/what-do-job-seeking-developers-need-their-github …. Part 2. Polished and pushed diabetes detection project to github
 
-ay 023: Supervised learning on DNA sequences. Classified whether a DNA sequence is a promoter of a gene or not (Dataset: https://archive.ics.uci.edu/ml/machine-learning-databases/molecular-biology/promoter-gene-sequences/ …) Realized you can train and evaluate many different algorithms at the same time and see which gives the best results. 
+ay 023: Supervised learning on DNA sequences. Classified whether a DNA sequence is a promoter of a gene or not (Dataset: https://archive.ics.uci.edu/ml/machine-learning-databases/molecular-biology/promoter-gene-sequences/ …) Realized you can train and evaluate many different algorithms at the same time and see which gives the best results.
 
 Day 024: Part 2. Tutorial on NLP (https://www.eduonix.com/learn-machine-learning-by-building-projects …). Very new to this sub-field. Learning the common techniques like tokenizing, stemming, chunking, etc, using the nltk module. Very excited to learn more!
 
@@ -74,7 +76,7 @@ Day 027: NLP continues. Learned tagging words to their part of speech. Used Rege
 
 Day 028: NLP. Learned how to train a SVM to predict if a movie review is positive or negative based on the most frequent words in the review. I thought it would do a poor job, but got a 83.6 % accuracy. Not bad!
 
-Day 029: Part 1: Learning how to package my python code using pip. Got stuck trying to upload to pypi. Kind of lost. Part 2: NLP. Polished my notebook on predicting movie review sentiment. Also correctly predicted sentiments of reviews I found online. 
+Day 029: Part 1: Learning how to package my python code using pip. Got stuck trying to upload to pypi. Kind of lost. Part 2: NLP. Polished my notebook on predicting movie review sentiment. Also correctly predicted sentiments of reviews I found online.
 
 Day 031: Part 1. Read chapter 4 on "Deep Learning with Python". On the issue of overfitting and various methods to overcome it (e.g. dropout, Kfold, regularization).
 
