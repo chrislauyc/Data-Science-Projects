@@ -97,3 +97,7 @@ Day 040-042: Got sick last couple of days. I finished working on using a neural 
 Day 043&044: Exploring a related topic--image inpainting. Trying to regenerate deleted parts of an image. Realized my model architecture didn't work. Started exploring variational autoencoder (https://blog.keras.io/building-autoencoders-in-keras.html …) Generative neural networks are fun.
 
 Day 045-047: Spent two days getting the neural network architecture set up. Spent today trying to train the model to reconstruct missing part of an image. Not even overfitting. Something is wrong with the model.
+
+Day 048-049: Image inpainting is a little too advanced for me right now. Instead, I have been organizing my github page on the data science projects I have been working on. Also, started following a tutorial on more NLP.
+
+Day 050: Back to following a machine learning tutorial. Now doing another NLP. Goal is to develop a SMS spam detector. Did data exploration. Now cleaning up the data using regex. 
